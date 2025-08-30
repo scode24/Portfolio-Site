@@ -10,6 +10,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faBars,
   faCloud,
   faCode,
   faDatabase,
@@ -36,18 +37,21 @@ const iconData = {
   AI: <FontAwesomeIcon icon={faBitbucket} />,
   aws: <FontAwesomeIcon icon={faAws} />,
   azure: <FontAwesomeIcon icon={faCloud} />,
-  ai: <FontAwesomeIcon icon={faRobot} />,
+  aiml: <FontAwesomeIcon icon={faRobot} />,
   email: <FontAwesomeIcon icon={faEnvelope} />,
   phone: <FontAwesomeIcon icon={faPhone} />,
   linkedin: <FontAwesomeIcon icon={faLinkedinIn} />,
   github: <FontAwesomeIcon icon={faGithub} />,
+  menu: <FontAwesomeIcon icon={faBars} />,
   //   kafka: <FontAwesomeIcon icon={fa} />,
 };
 
 const useFetchTechIcon = () => {
   const getIcon = (skill) => {
     const lowerSkill = skill.toLowerCase();
-    const matchKey = Object.keys(iconData).find((key) => lowerSkill == key);
+    const matchKey = Object.keys(iconData).find((key) =>
+      lowerSkill.includes(key)
+    );
     return matchKey ? iconData[matchKey] : <FontAwesomeIcon icon={faCode} />;
   };
 

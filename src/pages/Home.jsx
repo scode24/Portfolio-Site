@@ -39,7 +39,10 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm text-slate-700">
+              <h2 className="mt-8 text-2xl font-semibold text-slate-800">
+                Top Skills
+              </h2>
+              <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm text-slate-700">
                 {resume.skills.slice(0, 8).map((skill) => (
                   <SkillBox
                     data={{
@@ -49,7 +52,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <aside className="flex flex-col items-center">
+            <aside className="flex-col items-center hidden sm:flex">
               <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden flex items-center justify-center">
                 <img src="photo.JPG" />
                 {/* <span className="text-slate-400">Photo</span> */}
@@ -110,13 +113,25 @@ const Home = () => {
               Highlighted Projects
             </h2>
             <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-              {resume.projects.map((p) => (
-                <article key={p.title} className="border rounded p-4 bg-white">
-                  <h3 className="font-semibold text-slate-800">{p.title}</h3>
-                  <div className="text-sm text-slate-600">{p.stack}</div>
-                  <p className="mt-2 text-slate-700 text-sm">{p.desc}</p>
-                </article>
-              ))}
+              {resume.projects.map(
+                (p) =>
+                  p.highlight && (
+                    <div className="flex flex-col border rounded p-4 bg-white cursor-pointer hover:border-blue-700">
+                      <div className="">
+                        <img src="https://raw.githubusercontent.com/scode24/path-wise-ai/refs/heads/master/public/show-image.png" />
+                      </div>
+                      <article key={p.title} className="mt-3">
+                        <h3 className="font-semibold text-slate-800">
+                          {p.title}
+                        </h3>
+                        <div className="text-sm text-slate-600">{p.stack}</div>
+                        <p className="mt-3 text-slate-700 text-sm">
+                          {p.shortDesc}
+                        </p>
+                      </article>
+                    </div>
+                  )
+              )}
             </div>
           </section>
         </>

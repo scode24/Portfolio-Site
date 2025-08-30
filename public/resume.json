@@ -12,11 +12,13 @@
     "Java",
     "J2EE",
     "Spring",
-    "Dropwizard",
     "React.js",
-    "Express.js",
-    "Python",
     "Microservices",
+    "Python",
+    "Gen-AI",
+    "NLP",
+    "Express.js",
+    "Dropwizard",
     "RDBMS",
     "NoSQL",
     "Kafka",
@@ -114,21 +116,35 @@
   ],
   "projects": [
     {
-      "title": "Log Monitoring Web App",
-      "stack": "React.js, Spring Boot, JPA",
-      "desc": "A web application to track and query log data for specific time periods enabling efficient log monitoring and analysis. Implemented efficient query flows, pagination and filtering.",
-      "link": ""
+      "title": "Skill Guide: AI-Powered Chatbot for Skill Upgrade Planning",
+      "stack": "Gemini LLM, React.js, Express JS, Tailwind CSS, Docker",
+      "desc": "AI-powered chatbot that helps you plan your skill upgrades, suggest what to learn next, and provide personalized guidance to boost your technical skills. This app is built using the Gemini-2.0-Flash-Exp model from Google Gemini, and it can be customized for various parameters to suit your needs.",
+      "shortDesc": "An AI-powered chatbot that helps you plan skill upgrades, suggests what to learn next, and gives personalized guidance to boost your technical growth. Built with Google Gemini-2.0-Flash-Exp and fully customizable.",
+      "link": "",
+      "highlight": true
     },
     {
-      "title": "Internal SPP Server Monitor",
-      "stack": "React.js, Express.js",
-      "desc": "Internal tool to start, stop and check status of services in the development environment. Built interactive UI and REST APIs to control services.",
-      "link": ""
+      "title": "Tech Tracker App",
+      "stack": "React.js, Express.js, Node JS, Tailwind CSS, Google Charts, GitHub API",
+      "desc": "Tech Tracker App allows users to track the technologies they have used throughout a specific year, along with the amount of code (in Byte) they have written for each technology. The app provides a visual representation of this data using Google Charts and allows interaction via a React frontend. The backend is built with Express.js and Node.js and integrates with the GitHub API to fetch relevant data.",
+      "shortDesc": "Track your yearly tech stack and coding output with interactive Google Charts, powered by React, Express.js, Node.js, and GitHub API",
+      "link": "",
+      "highlight": true
     },
     {
-      "title": "RAG-based Chatbot POC",
+      "title": "DSA Tracker App",
       "stack": "LangChain, LLMs, Vector DB",
-      "desc": "Prototype for RAG-based chatbot that used Gemini/ChatGPT APIs and later migrated to Llama, with contextual response generation and computation based on LLM output.",
+      "desc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
+      "shortDesc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
+      "link": "",
+      "highlight": true
+    },
+    {
+      "title": "URL Shortener",
+      "stack": "React JS, Spring Boot, JPA, MySQL",
+      "desc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort.",
+      "shortDesc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort",
+      "highlight": true,
       "link": ""
     }
   ],

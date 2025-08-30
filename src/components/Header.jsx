@@ -1,8 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
+import useFetchTechIcon from "../hooks/FetchTechIcon";
 
 const Header = () => {
   const { resume, loading } = useFetchResumeInfo();
+  const { getIcon } = useFetchTechIcon();
 
   return (
     <header className="bg-white/60 backdrop-blur-sm sticky top-0 z-50 border-b">
@@ -18,7 +20,6 @@ const Header = () => {
               }
               to="/"
             >
-              {" "}
               Home
             </NavLink>
             <NavLink
@@ -63,8 +64,9 @@ const Header = () => {
             </NavLink>
           </nav>
           <div className="md:hidden">
-            {/* Mobile menu could go here - kept simple for preview */}
-            code
+            <div className="flex flex-col justify-center items-center">
+              {getIcon("menu")}
+            </div>
           </div>
         </div>
       )}
