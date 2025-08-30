@@ -1,0 +1,136 @@
+{
+  "name": "Soumyabrata Sarkar",
+  "title": "Senior Software Engineer",
+  "location": "Bangalore, India",
+  "phone": "+91-8088844081",
+  "altPhone": "+91-9535592494",
+  "email": "sarkar.soumyabrata2@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/soumyabrata-sarkar/",
+  "github": "https://github.com/scode24",
+  "summary": "Senior Software Engineer with 11 years of experience designing, testing, and developing software solutions. In-depth understanding of web technologies with focus on delivering innovative business solutions. Excels in fast-paced, high-energy and deadline-driven environment with willingness to take on additional tasks. Passionate about leveraging AI and machine learning to drive innovation and solve complex problems.",
+  "skills": [
+    "Java",
+    "J2EE",
+    "Spring",
+    "Dropwizard",
+    "React.js",
+    "Express.js",
+    "Python",
+    "Microservices",
+    "RDBMS",
+    "NoSQL",
+    "Kafka",
+    "Docker",
+    "CI/CD",
+    "AWS",
+    "Azure",
+    "LLMs Integration"
+  ],
+  "experience": [
+    {
+      "company": "OpenText",
+      "location": "Bangalore",
+      "role": "Senior Software Engineer",
+      "period": "08/2023 - 07/2025",
+      "bullets": [
+        "Implemented HMAC-256/512 hashing and improved data processing efficiency by 25% while ensuring PCI DSS v4.0 compliance.",
+        "Optimized JVM configurations reducing server crashes by 40% and improving system stability.",
+        "Refactored bulk API code, improving response times by 30% and increasing throughput by 25% (supports >1M API calls/day).",
+        "Automated performance testing with JMeter for up to 100,000 concurrent users; created 10+ scripts.",
+        "Developed React + Spring Boot app for log monitoring and a React + Express internal SPP server monitoring tool.",
+        "Worked on RAG-based chatbot using LangChain and integrated Gemini/ChatGPT (later migrated to Llama)."
+      ]
+    },
+    {
+      "company": "Thomson Reuters",
+      "location": "Bangalore",
+      "role": "Senior Software Engineer",
+      "period": "05/2021 - 08/2023",
+      "bullets": [
+        "Led event-driven architecture redesign improving scalability by 50% and reducing latency by 30% for systems handling >2M daily transactions.",
+        "Planned and delivered projects on-time with 95% milestone delivery and reduced post-delivery defects by 20%.",
+        "Optimized UI and implemented advanced search with backend caching and query optimization."
+      ]
+    },
+    {
+      "company": "Capgemini",
+      "location": "Kolkata",
+      "role": "Consultant",
+      "period": "08/2018 - 05/2021",
+      "bullets": [
+        "Refactored monolith into microservices to improve scalability and maintainability.",
+        "Used Angular & Kafka for responsive workflows and implemented real-time position tracking with Google Maps API."
+      ]
+    },
+    {
+      "company": "Infosys",
+      "location": "Bangalore",
+      "role": "Technology Analyst",
+      "period": "07/2017 - 08/2018",
+      "bullets": [
+        "Requirement analysis and code development. Developed Python services to automate processes."
+      ]
+    },
+    {
+      "company": "IBM",
+      "location": "Bangalore",
+      "role": "Associate System Engineer",
+      "period": "12/2014 - 07/2017",
+      "bullets": [
+        "Delivered high-quality solutions and worked on Linux scripts for log monitoring and backup automation."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Surge Award",
+      "org": "Thomson Reuters",
+      "year": 2023,
+      "note": "Outstanding results in demanding circumstances"
+    },
+    {
+      "title": "Project Star",
+      "org": "Capgemini",
+      "year": 2019,
+      "note": "Exceptional project performance"
+    },
+    {
+      "title": "Manager's Choice Award - Put the Client First",
+      "org": "IBM",
+      "year": 2016
+    },
+    {
+      "title": "Manager's Choice Award - Restlessly Reinvent",
+      "org": "IBM",
+      "year": 2015
+    }
+  ],
+  "education": [
+    {
+      "school": "West Bengal University of Technology",
+      "degree": "B.Tech, Computer Science & Engineering",
+      "year": "03/2013"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Log Monitoring Web App",
+      "stack": "React.js, Spring Boot, JPA",
+      "desc": "A web application to track and query log data for specific time periods enabling efficient log monitoring and analysis. Implemented efficient query flows, pagination and filtering.",
+      "link": ""
+    },
+    {
+      "title": "Internal SPP Server Monitor",
+      "stack": "React.js, Express.js",
+      "desc": "Internal tool to start, stop and check status of services in the development environment. Built interactive UI and REST APIs to control services.",
+      "link": ""
+    },
+    {
+      "title": "RAG-based Chatbot POC",
+      "stack": "LangChain, LLMs, Vector DB",
+      "desc": "Prototype for RAG-based chatbot that used Gemini/ChatGPT APIs and later migrated to Llama, with contextual response generation and computation based on LLM output.",
+      "link": ""
+    }
+  ],
+  "languages": ["English", "Hindi", "Bengali"]
+}
