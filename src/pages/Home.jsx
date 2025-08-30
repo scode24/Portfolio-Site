@@ -116,11 +116,14 @@ const Home = () => {
               {resume.projects.map(
                 (p) =>
                   p.highlight && (
-                    <div className="flex flex-col border rounded p-4 bg-white cursor-pointer hover:border-blue-700">
-                      <div className="">
-                        <img src="https://raw.githubusercontent.com/scode24/path-wise-ai/refs/heads/master/public/show-image.png" />
+                    <div className="flex flex-col border rounded bg-white cursor-pointer hover:border-blue-700">
+                      <div className="flex flex-col justify-center items-center h-[200px]">
+                        <img
+                          src={p.imgSrc || "logo192.png"}
+                          className="max-w-full max-h-full object-contain"
+                        />
                       </div>
-                      <article key={p.title} className="mt-3">
+                      <article key={p.title} className="p-4">
                         <h3 className="font-semibold text-slate-800">
                           {p.title}
                         </h3>

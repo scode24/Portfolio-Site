@@ -121,6 +121,7 @@
       "desc": "AI-powered chatbot that helps you plan your skill upgrades, suggest what to learn next, and provide personalized guidance to boost your technical skills. This app is built using the Gemini-2.0-Flash-Exp model from Google Gemini, and it can be customized for various parameters to suit your needs.",
       "shortDesc": "An AI-powered chatbot that helps you plan skill upgrades, suggests what to learn next, and gives personalized guidance to boost your technical growth. Built with Google Gemini-2.0-Flash-Exp and fully customizable.",
       "link": "",
+      "imgSrc": "https://raw.githubusercontent.com/scode24/Custom-Chat-Bot/refs/heads/main/public/chat-bot-image.png",
       "highlight": true
     },
     {
