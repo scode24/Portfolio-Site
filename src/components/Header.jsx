@@ -38,14 +38,14 @@ const Header = () => {
             >
               Skills
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) =>
                 isActive ? "font-semibold" : "hover:underline"
               }
               to="/experience"
             >
               Experience
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={({ isActive }) =>
                 isActive ? "font-semibold" : "hover:underline"

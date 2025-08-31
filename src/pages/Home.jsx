@@ -120,7 +120,7 @@ const Home = () => {
                       <div className="flex flex-col justify-center items-center h-[200px]">
                         <img
                           src={p.imgSrc || "logo192.png"}
-                          className="max-w-full max-h-full object-contain"
+                          className="w-full h-[200px] object-fill"
                         />
                       </div>
                       <article key={p.title} className="p-4">

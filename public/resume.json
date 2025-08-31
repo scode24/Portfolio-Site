@@ -7,7 +7,8 @@
   "email": "sarkar.soumyabrata2@gmail.com",
   "linkedin": "https://www.linkedin.com/in/soumyabrata-sarkar/",
   "github": "https://github.com/scode24",
-  "summary": "Senior Software Engineer with 11 years of experience designing, testing, and developing software solutions. In-depth understanding of web technologies with focus on delivering innovative business solutions. Excels in fast-paced, high-energy and deadline-driven environment with willingness to take on additional tasks. Passionate about leveraging AI and machine learning to drive innovation and solve complex problems.",
+  "summary": "Software Developer with 11 years of experience designing, testing, and developing software solutions. In-depth understanding of web technologies with focus on delivering innovative business solutions. Excels in fast-paced, high-energy and deadline-driven environment with willingness to take on additional tasks. Passionate about leveraging AI and machine learning to drive innovation and solve complex problems.",
+  "about": "Software Engineer with 11 years of experience in designing, testing, and developing scalable software solutions. Possess an in-depth understanding of modern web technologies with a strong focus on delivering innovative, business-driven applications. Adept at thriving in fast-paced, high-energy, and deadline-driven environments with a proven ability to take ownership and go beyond assigned responsibilities.Passionate about leveraging Artificial Intelligence (AI) and Machine Learning (ML) to drive innovation and solve complex challenges. Currently exploring Generative AI and Large Language Models (LLMs), actively building applications that integrate cutting-edge AI capabilities to create real-world impact.Outside of work, I enjoy developing applications over weekends and frequently participate in hackathons to sharpen my problem-solving skills and collaborate on new ideas. I also pursue painting as a hobby and love to travel to the mountains, drawing inspiration from nature to fuel both my creativity and professional outlook.",
   "skills": [
     "Java",
     "J2EE",
@@ -130,6 +131,7 @@
       "desc": "Tech Tracker App allows users to track the technologies they have used throughout a specific year, along with the amount of code (in Byte) they have written for each technology. The app provides a visual representation of this data using Google Charts and allows interaction via a React frontend. The backend is built with Express.js and Node.js and integrates with the GitHub API to fetch relevant data.",
       "shortDesc": "Track your yearly tech stack and coding output with interactive Google Charts, powered by React, Express.js, Node.js, and GitHub API",
       "link": "",
+      "imgSrc": "https://raw.githubusercontent.com/scode24/Tech-Tracker-App/refs/heads/master/public/tech-tracker-image.png",
       "highlight": true
     },
     {
@@ -138,14 +140,23 @@
       "desc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
       "shortDesc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
       "link": "",
-      "highlight": true
+      "imgSrc": "https://raw.githubusercontent.com/scode24/DSA-Tracker-App/refs/heads/master/screens/2.png"
+    },
+    {
+      "title": "Document Chuncking Analysis",
+      "stack": "Python, LangChain, Pandas, NLTK, PuMuPDF",
+      "desc": "This tool extracts text from a PDF resume, appends HTML content containing technical skills information, and then applies various text splitting strategies to analyze how different methods chunk the content. The results are saved in both CSV and JSON formats for further analysis.",
+      "shortDesc": "This code is for analyzing different text splitting methods using LangChain's text splitters on PDF documents and HTML content",
+      "highlight": true,
+      "imgSrc": "https://raw.githubusercontent.com/scode24/Document-Chunking-Analysis/refs/heads/main/docuement_chunking.png",
+      "link": ""
     },
     {
       "title": "URL Shortener",
       "stack": "React JS, Spring Boot, JPA, MySQL",
       "desc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort.",
       "shortDesc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort",
-      "highlight": true,
+      "imgSrc": "https://raw.githubusercontent.com/scode24/URL-Shortener/refs/heads/main/public/fs.png",
       "link": ""
     }
   ],

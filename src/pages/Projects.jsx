@@ -1,9 +1,32 @@
 import { useState } from "react";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
+import useFetchTechIcon from "../hooks/FetchTechIcon";
+
+const ActionButton = (props) => {
+  const { getIcon } = useFetchTechIcon();
+  const { icon, name, isVisible } = props.data;
+
+  return (
+    isVisible && (
+      <button
+        // onClick={() => setActive(idx)}
+        className="flex flex-row text-sm px-3 py-1 border rounded w-full"
+      >
+        <div className="flex flex-col justify-center items-center mr-2">
+          {getIcon(icon)}
+        </div>
+        <div className="flex flex-col justify-center items-center text-center w-full">
+          {name}
+        </div>
+      </button>
+    )
+  );
+};
 
 const Projects = () => {
   const [active, setActive] = useState(null);
   const { resume, loading } = useFetchResumeInfo();
+  const { getIcon } = useFetchTechIcon();
 
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
@@ -16,25 +39,50 @@ const Projects = () => {
                 key={p.title}
                 className="flex flex-col border rounded bg-white"
               >
-                <div className="flex flex-col justify-center items-center">
-                  <img src="https://raw.githubusercontent.com/scode24/path-wise-ai/refs/heads/master/public/show-image.png" />
+                <div className="flex flex-row border-b">
+                  <div className="flex flex-col justify-center items-center m-4">
+                    {getIcon("project")}
+                  </div>
+                  <div className="p-3">
+                    <h3 className="font-semibold">{p.title}</h3>
+                    <div className="text-sm text-slate-600">{p.stack}</div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center border-b">
+                  <img src={p.imgSrc} className="h-[300px] w-full" />
                 </div>
                 <div className="flex flex-col p-3">
-                  <div className="flex flex-row justify-between items-start">
-                    <div>
-                      <h3 className="font-semibold">{p.title}</h3>
-                      <div className="text-sm text-slate-600">{p.stack}</div>
-                    </div>
-                    <div>
-                      <button
-                        onClick={() => setActive(idx)}
-                        className="text-sm px-3 py-1 border rounded"
-                      >
-                        Details
-                      </button>
-                    </div>
+                  <div className="flex flex-row justify-between items-start gap-3">
+                    <ActionButton
+                      data={{
+                        icon: "Details",
+                        name: "Details",
+                        isVisible: true,
+                      }}
+                    />
+                    <ActionButton
+                      data={{
+                        icon: "internet",
+                        name: "Live",
+                        isVisible: true,
+                      }}
+                    />
+                    <ActionButton
+                      data={{
+                        icon: "youtube",
+                        name: "Demo",
+                        isVisible: true,
+                      }}
+                    />
+                    <ActionButton
+                      data={{
+                        icon: "github",
+                        name: "Source",
+                        isVisible: false,
+                      }}
+                    />
                   </div>
-                  <p className="mt-3 text-slate-700 text-sm">{p.desc}</p>
+                  <p className="mt-5 text-slate-700 text-sm">{p.desc}</p>
                 </div>
               </div>
             ))}

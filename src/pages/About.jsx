@@ -8,9 +8,7 @@ const About = () => {
       {!loading && (
         <>
           <h2 className="text-2xl font-semibold">About</h2>
-          <p className="mt-4 text-slate-700 leading-relaxed">
-            {resume.summary}
-          </p>
+          <p className="mt-4 text-slate-700 leading-relaxed">{resume.about}</p>
 
           <h3 className="mt-8 text-xl font-semibold">Languages</h3>
           <ul className="mt-2 list-disc list-inside text-slate-700">

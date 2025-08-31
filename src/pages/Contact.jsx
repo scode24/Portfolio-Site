@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
+import useFetchTechIcon from "../hooks/FetchTechIcon";
 
 const Contact = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const { resume, loading } = useFetchResumeInfo();
+  const { getIcon } = useFetchTechIcon();
 
   const submit = (e) => {
     e.preventDefault();
@@ -62,8 +64,12 @@ const Contact = () => {
           </form>
 
           <div className="mt-8 text-sm text-slate-600">
-            <div>Email: {resume.email}</div>
-            <div>Phone: {resume.phone}</div>
+            <div className="flex flex-row">
+              <div className="flex flex-col justify-center items-center mr-2">
+                {getIcon("email")}
+              </div>
+              <div>{resume.email}</div>
+            </div>
           </div>
         </>
       )}

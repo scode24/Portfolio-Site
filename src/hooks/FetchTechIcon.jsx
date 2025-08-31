@@ -8,6 +8,7 @@ import {
   faLinkedinIn,
   faPython,
   faReact,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBars,
@@ -16,6 +17,7 @@ import {
   faDatabase,
   faDiagramProject,
   faEnvelope,
+  faGlobe,
   faLeaf,
   faPhone,
   faRobot,
@@ -43,6 +45,8 @@ const iconData = {
   linkedin: <FontAwesomeIcon icon={faLinkedinIn} />,
   github: <FontAwesomeIcon icon={faGithub} />,
   menu: <FontAwesomeIcon icon={faBars} />,
+  internet: <FontAwesomeIcon icon={faGlobe} />,
+  youtube: <FontAwesomeIcon icon={faYoutube} />,
   //   kafka: <FontAwesomeIcon icon={fa} />,
 };
 
