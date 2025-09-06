@@ -18,7 +18,7 @@ const Experience = () => {
                     <div className="font-semibold text-lg">
                       {exp.role} — {exp.company}
                     </div>
-                    <div className="text-sm text-slate-600">
+                    <div className="text-sm ">
                       {exp.location} • {exp.period}
                     </div>
                   </div>
@@ -31,7 +31,7 @@ const Experience = () => {
                     </button>
                   </div>
                 </div>
-                <div className="mt-3 text-slate-700">
+                <div className="mt-3 ">
                   <ul className="list-disc list-inside">
                     {exp.bullets.slice(0, 2).map((b) => (
                       <li key={b}>{b}</li>
@@ -54,7 +54,7 @@ const Experience = () => {
                     Close
                   </button>
                 </div>
-                <div className="mt-4 text-slate-700">
+                <div className="mt-4 ">
                   <ul className="list-disc list-inside">
                     {resume.experience[active].bullets.map((b) => (
                       <li key={b}>{b}</li>

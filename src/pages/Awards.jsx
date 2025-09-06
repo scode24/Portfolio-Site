@@ -8,15 +8,13 @@ const Awards = () => {
       {!loading && (
         <>
           <h2 className="text-2xl font-semibold">Awards & Recognition</h2>
-          <ul className="mt-4 list-disc list-inside text-slate-700">
+          <ul className="mt-4 list-disc list-inside ">
             {resume.awards.map((a) => (
               <li key={a.title} className="mb-2">
                 <div className="font-semibold">
                   {a.title} — {a.org} ({a.year})
                 </div>
-                {a.note && (
-                  <div className="text-sm text-slate-600">{a.note}</div>
-                )}
+                {a.note && <div className="text-sm ">{a.note}</div>}
               </li>
             ))}
           </ul>

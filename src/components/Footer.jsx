@@ -3,7 +3,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t mt-12 py-8">
-      <div className="max-w-6xl mx-auto px-6 text-sm text-slate-600">
+      <div className="max-w-6xl mx-auto px-6 text-sm ">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             © {new Date().getFullYear()} {resume.name}. Built with React +

@@ -9,11 +9,11 @@ const Header = () => {
   return (
     <header className="bg-white/60 backdrop-blur-sm sticky top-0 z-50 border-b">
       {!loading && (
-        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <Link to="/" className="text-xl font-semibold text-slate-800">
+        <div className="max-w-6xl mx-auto px-6 py-[15px] flex items-center justify-between">
+          <Link to="/" className="text-xl font-semibold ">
             {resume.name}
           </Link>
-          <nav className="space-x-4 text-slate-700 hidden md:block">
+          <nav className="space-x-4  hidden md:block">
             <NavLink
               className={({ isActive }) =>
                 isActive ? "font-semibold" : "hover:underline"

@@ -11,17 +11,15 @@ import Skills from "./pages/Skills";
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-slate-50 text-slate-800">
+      <div className="min-h-screen bg-slate-50 text-slate-700">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          {/* <Route path="/experience" element={<Experience />} /> */}
           <Route path="/projects" element={<Projects />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Add a catch-all route to redirect to home */}
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />

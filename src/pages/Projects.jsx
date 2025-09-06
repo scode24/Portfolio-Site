@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ProjectShowbox } from "../components/ProjectShowbox";
+import StackList from "../components/StackList";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
 import useFetchTechIcon from "../hooks/FetchTechIcon";
 
@@ -44,9 +45,8 @@ const Projects = () => {
                   <div className="flex flex-col justify-center items-center m-4">
                     {getIcon("project")}
                   </div>
-                  <div className="p-3">
+                  <div className="py-3 pr-3 md:py-[15px] md:pr-[15px]">
                     <h3 className="font-semibold">{p.title}</h3>
-                    <div className="text-sm text-slate-600">{p.stack}</div>
                   </div>
                 </div>
                 <ProjectShowbox
@@ -89,7 +89,16 @@ const Projects = () => {
                       }}
                     />
                   </div>
-                  <p className="mt-5 text-slate-700 text-sm">{p.desc}</p>
+
+                  <div className="mt-5">
+                    <StackList
+                      data={{
+                        stacks: p.stack,
+                      }}
+                    />
+                  </div>
+
+                  <p className="mt-5  text-sm">{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -106,9 +115,9 @@ const Projects = () => {
                     Close
                   </button>
                 </div>
-                <div className="mt-4 text-slate-700">
+                <div className="mt-4 ">
                   <p>{resume.projects[active].desc}</p>
-                  <div className="mt-3 text-sm text-slate-600">
+                  <div className="mt-3 text-sm ">
                     Stack: {resume.projects[active].stack}
                   </div>
                 </div>

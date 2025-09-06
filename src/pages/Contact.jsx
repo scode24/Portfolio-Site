@@ -21,7 +21,7 @@ const Contact = () => {
       {!loading && (
         <>
           <h2 className="text-2xl font-semibold">Contact</h2>
-          <p className="mt-2 text-slate-700">
+          <p className="mt-2 ">
             Want to reach out? Send a message — it will open your mail client.
           </p>
           <form onSubmit={submit} className="mt-6 space-y-4">
@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
           </form>
 
-          <div className="mt-8 text-sm text-slate-600">
+          <div className="mt-8 text-sm ">
             <div className="flex flex-row">
               <div className="flex flex-col justify-center items-center mr-2">
                 {getIcon("email")}
