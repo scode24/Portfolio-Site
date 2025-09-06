@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ProjectShowbox } from "../components/ProjectShowbox";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
 import useFetchTechIcon from "../hooks/FetchTechIcon";
 
@@ -48,15 +49,21 @@ const Projects = () => {
                     <div className="text-sm text-slate-600">{p.stack}</div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-center items-center border-b">
-                  <img src={p.imgSrc} className="h-[300px] w-full" />
-                </div>
+                <ProjectShowbox
+                  data={{
+                    imgsrc: p.imgSrc || "logo192.png",
+                    sourceLink: "",
+                    liveLink: "",
+                    demoLink: "",
+                    width: 200,
+                  }}
+                />
                 <div className="flex flex-col p-3">
                   <div className="flex flex-row justify-between items-start gap-3">
                     <ActionButton
                       data={{
-                        icon: "Details",
-                        name: "Details",
+                        icon: "GitHub",
+                        name: "Source",
                         isVisible: true,
                       }}
                     />

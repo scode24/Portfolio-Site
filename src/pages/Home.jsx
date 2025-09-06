@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { ProjectShowbox } from "../components/ProjectShowbox";
 import SkillBox from "../components/SkillBox";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
 import useFetchTechIcon from "../hooks/FetchTechIcon";
@@ -6,6 +7,8 @@ import useFetchTechIcon from "../hooks/FetchTechIcon";
 const Home = () => {
   const { resume, loading } = useFetchResumeInfo();
   const { getIcon } = useFetchTechIcon();
+
+  const navigator = useNavigate();
 
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
@@ -116,13 +119,20 @@ const Home = () => {
               {resume.projects.map(
                 (p) =>
                   p.highlight && (
-                    <div className="flex flex-col border rounded bg-white cursor-pointer hover:border-blue-700">
-                      <div className="flex flex-col justify-center items-center h-[200px]">
-                        <img
-                          src={p.imgSrc || "logo192.png"}
-                          className="w-full h-[200px] object-fill"
-                        />
-                      </div>
+                    <div
+                      className="flex flex-col border rounded bg-white cursor-pointer"
+                      onClick={() => navigator("projects")}
+                    >
+                      <ProjectShowbox
+                        data={{
+                          imgsrc: p.imgSrc || "logo192.png",
+                          sourceLink: "",
+                          liveLink: "",
+                          demoLink: "",
+                          width: 200,
+                          height: 200,
+                        }}
+                      />
                       <article key={p.title} className="p-4">
                         <h3 className="font-semibold text-slate-800">
                           {p.title}

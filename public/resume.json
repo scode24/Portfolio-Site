@@ -8,7 +8,12 @@
   "linkedin": "https://www.linkedin.com/in/soumyabrata-sarkar/",
   "github": "https://github.com/scode24",
   "summary": "Software Developer with 11 years of experience designing, testing, and developing software solutions. In-depth understanding of web technologies with focus on delivering innovative business solutions. Excels in fast-paced, high-energy and deadline-driven environment with willingness to take on additional tasks. Passionate about leveraging AI and machine learning to drive innovation and solve complex problems.",
-  "about": "Software Engineer with 11 years of experience in designing, testing, and developing scalable software solutions. Possess an in-depth understanding of modern web technologies with a strong focus on delivering innovative, business-driven applications. Adept at thriving in fast-paced, high-energy, and deadline-driven environments with a proven ability to take ownership and go beyond assigned responsibilities.Passionate about leveraging Artificial Intelligence (AI) and Machine Learning (ML) to drive innovation and solve complex challenges. Currently exploring Generative AI and Large Language Models (LLMs), actively building applications that integrate cutting-edge AI capabilities to create real-world impact.Outside of work, I enjoy developing applications over weekends and frequently participate in hackathons to sharpen my problem-solving skills and collaborate on new ideas. I also pursue painting as a hobby and love to travel to the mountains, drawing inspiration from nature to fuel both my creativity and professional outlook.",
+  "about": [
+    "I am a Software Engineer with 11 years of experience in designing, testing, and developing scalable software solutions. I possess an in-depth understanding of modern web technologies and have a strong focus on delivering innovative, business-driven applications.",
+    "I thrive in fast-paced, high-energy, and deadline-driven environments, consistently demonstrating the ability to take ownership and go beyond assigned responsibilities.",
+    "Passionate about Artificial Intelligence (AI) and Machine Learning (ML), I am actively exploring Generative AI and Large Language Models (LLMs). I am currently building applications that integrate cutting-edge AI capabilities to create meaningful real-world impact.",
+    "Outside of work, I enjoy developing applications over weekends and frequently participate in hackathons to sharpen my problem-solving skills and collaborate on new ideas. Beyond technology, I pursue painting as a hobby and love traveling to the mountains, where I draw inspiration from nature to fuel both my creativity and professional outlook."
+  ],
   "skills": [
     "Java",
     "J2EE",
