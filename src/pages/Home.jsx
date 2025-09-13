@@ -52,7 +52,7 @@ const Home = () => {
             </div>
             <aside className="flex-col items-center hidden sm:flex">
               <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden flex items-center justify-center">
-                <img src="photo.JPG" />
+                <img src="photo.JPG" alt="Soumyabrata-Sarkar-photo" />
                 {/* <span className="">Photo</span> */}
               </div>
               <div className="mt-4 text-sm  text-center">

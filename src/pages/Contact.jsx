@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
 import useFetchTechIcon from "../hooks/FetchTechIcon";
 
 const Contact = () => {
-  const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const { resume, loading } = useFetchResumeInfo();
   const { getIcon } = useFetchTechIcon();
