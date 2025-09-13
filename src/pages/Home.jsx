@@ -112,21 +112,20 @@ const Home = () => {
               {resume.projects.map(
                 (p) =>
                   p.highlight && (
-                    <div
-                      className="flex flex-col border rounded bg-white cursor-pointer"
-                      onClick={() => navigator("projects")}
-                    >
+                    <div className="flex flex-col border rounded bg-white cursor-pointer">
                       <ProjectShowbox
                         data={{
                           imgsrc: p.imgSrc || "logo192.png",
-                          sourceLink: "",
-                          liveLink: "",
-                          demoLink: "",
+                          sourceLink: p.source,
                           width: 200,
                           height: 200,
                         }}
                       />
-                      <article key={p.title} className="p-4">
+                      <article
+                        key={p.title}
+                        className="p-4"
+                        onClick={() => navigator("projects")}
+                      >
                         <h3 className="font-semibold ">{p.title}</h3>
 
                         <div className="mt-5">
