@@ -128,24 +128,25 @@
       "shortDesc": "An AI-powered chatbot that helps you plan skill upgrades, suggests what to learn next, and gives personalized guidance to boost your technical growth. Built with Google Gemini-2.0-Flash-Exp and fully customizable.",
       "link": "",
       "imgSrc": "https://raw.githubusercontent.com/scode24/Custom-Chat-Bot/refs/heads/main/public/chat-bot-image.png",
-      "highlight": true
+      "highlight": true,
+      "source": "https://github.com/scode24/Custom-Chat-Bot"
     },
     {
       "title": "Tech Tracker App",
       "stack": "React.js, Express.js, Node JS, Tailwind CSS, Google Charts, GitHub API",
       "desc": "Tech Tracker App allows users to track the technologies they have used throughout a specific year, along with the amount of code (in Byte) they have written for each technology. The app provides a visual representation of this data using Google Charts and allows interaction via a React frontend. The backend is built with Express.js and Node.js and integrates with the GitHub API to fetch relevant data.",
       "shortDesc": "Track your yearly tech stack and coding output with interactive Google Charts, powered by React, Express.js, Node.js, and GitHub API",
-      "link": "",
       "imgSrc": "https://raw.githubusercontent.com/scode24/Tech-Tracker-App/refs/heads/master/public/tech-tracker-image.png",
-      "highlight": true
+      "highlight": true,
+      "source": "https://github.com/scode24/Tech-Tracker-App"
     },
     {
       "title": "DSA Tracker App",
       "stack": "LangChain, LLMs, Vector DB",
       "desc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
       "shortDesc": "DSA-Tracker 1.0 is a Full Stack web application designed to help users efficiently manage their Data Structures and Algorithms (DSA) study progress. This application provides a user-friendly interface for logging, updating, and deleting study entries, as well as tracking the status and complexity of each question.",
-      "link": "",
-      "imgSrc": "https://raw.githubusercontent.com/scode24/DSA-Tracker-App/refs/heads/master/screens/2.png"
+      "imgSrc": "https://raw.githubusercontent.com/scode24/DSA-Tracker-App/refs/heads/master/screens/2.png",
+      "source": "https://github.com/scode24/DSA-Tracker-App"
     },
     {
       "title": "Document Chuncking Analysis",
@@ -154,7 +155,7 @@
       "shortDesc": "This code is for analyzing different text splitting methods using LangChain's text splitters on PDF documents and HTML content",
       "highlight": true,
       "imgSrc": "https://raw.githubusercontent.com/scode24/Document-Chunking-Analysis/refs/heads/main/docuement_chunking.png",
-      "link": ""
+      "source": "https://github.com/scode24/Document-Chunking-Analysis"
     },
     {
       "title": "URL Shortener",
@@ -162,7 +163,7 @@
       "desc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort.",
       "shortDesc": "The URL Shortener app is a personal side project developed by Soumyabrata Sarkar. It is designed to provide users with a simple and efficient solution for generating and managing short URLs, making it easier for them to share links and access sites with minimal effort",
       "imgSrc": "https://raw.githubusercontent.com/scode24/URL-Shortener/refs/heads/main/public/fs.png",
-      "link": ""
+      "source": "https://github.com/scode24/URL-Shortener"
     }
   ],
   "languages": ["English", "Hindi", "Bengali"]

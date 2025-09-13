@@ -6,7 +6,13 @@ const CircularButton = (props) => {
   return (
     <div
       className="flex flex-col justify-center items-center rounded-full border-[1px] bg-white p-3 shadow-sm w-15 h-15 cursor-pointer hover:border-[1px] hover:border-black"
-      onClick={() => window.open(link)}
+      onClick={() =>
+        !link
+          ? alert(
+              "The content for this link is currently under development and will be available soon. I am actively working on it."
+            )
+          : window.open(link)
+      }
     >
       <div className="flex flex-col items-center text-xs">
         <div>{icon}</div>

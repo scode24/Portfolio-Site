@@ -6,13 +6,20 @@ import useFetchTechIcon from "../hooks/FetchTechIcon";
 
 const ActionButton = (props) => {
   const { getIcon } = useFetchTechIcon();
-  const { icon, name, isVisible } = props.data;
+  const { icon, name, isVisible, link } = props.data;
 
   return (
     isVisible && (
       <button
         // onClick={() => setActive(idx)}
         className="flex flex-row text-sm px-3 py-1 border rounded w-full"
+        onClick={() => {
+          !link
+            ? alert(
+                "The content for this link is currently under development and will be available soon. I am actively working on it."
+              )
+            : window.open(link);
+        }}
       >
         <div className="flex flex-col justify-center items-center mr-2">
           {getIcon(icon)}
@@ -52,9 +59,9 @@ const Projects = () => {
                 <ProjectShowbox
                   data={{
                     imgsrc: p.imgSrc || "logo192.png",
-                    sourceLink: "",
-                    liveLink: "",
-                    demoLink: "",
+                    sourceLink: p.source,
+                    // liveLink: "",
+                    // demoLink: "",
                     width: 200,
                   }}
                 />
@@ -65,6 +72,7 @@ const Projects = () => {
                         icon: "GitHub",
                         name: "Source",
                         isVisible: true,
+                        link: p.source,
                       }}
                     />
                     <ActionButton
@@ -72,6 +80,7 @@ const Projects = () => {
                         icon: "internet",
                         name: "Live",
                         isVisible: true,
+                        link: p.live,
                       }}
                     />
                     <ActionButton
@@ -79,13 +88,7 @@ const Projects = () => {
                         icon: "youtube",
                         name: "Demo",
                         isVisible: true,
-                      }}
-                    />
-                    <ActionButton
-                      data={{
-                        icon: "github",
-                        name: "Source",
-                        isVisible: false,
+                        link: p.youtube,
                       }}
                     />
                   </div>
