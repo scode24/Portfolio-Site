@@ -9,7 +9,7 @@ const Skills = () => {
       {!loading && (
         <>
           <h2 className="text-2xl font-semibold">Skills</h2>
-          <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {resume.skills.map((skill) => (
               <SkillBox
                 data={{

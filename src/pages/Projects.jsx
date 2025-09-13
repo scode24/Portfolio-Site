@@ -35,7 +35,7 @@ const Projects = () => {
       {!loading && (
         <>
           <h2 className="text-2xl font-semibold">Projects</h2>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
             {resume.projects.map((p, idx) => (
               <div
                 key={p.title}

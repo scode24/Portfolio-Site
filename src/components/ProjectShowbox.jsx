@@ -42,7 +42,7 @@ export const ProjectShowbox = (props) => {
       />
 
       <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-row gap-4 z-10"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-row gap-3 z-10"
         style={{
           visibility: circularButtonVisible,
         }}

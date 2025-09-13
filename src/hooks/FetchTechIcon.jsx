@@ -21,6 +21,7 @@ import {
   faLeaf,
   faPhone,
   faRobot,
+  faX,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -45,6 +46,7 @@ const iconData = {
   linkedin: <FontAwesomeIcon icon={faLinkedinIn} />,
   github: <FontAwesomeIcon icon={faGithub} />,
   menu: <FontAwesomeIcon icon={faBars} />,
+  x: <FontAwesomeIcon icon={faX} />,
   internet: <FontAwesomeIcon icon={faGlobe} />,
   youtube: <FontAwesomeIcon icon={faYoutube} />,
   //   kafka: <FontAwesomeIcon icon={fa} />,

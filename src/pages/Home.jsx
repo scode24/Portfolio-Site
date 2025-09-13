@@ -15,7 +15,7 @@ const Home = () => {
     <main className="max-w-6xl mx-auto px-6 py-12">
       {!loading && (
         <>
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-3 items-center">
             <div className="md:col-span-2">
               <h1 className="text-4xl font-bold ">{resume.name}</h1>
               <p className="mt-2 ">
@@ -23,24 +23,24 @@ const Home = () => {
               </p>
               <p className="mt-6  leading-relaxed">{resume.summary}</p>
 
-              <div className="mt-6 flex gap-3">
+              <div className="flex flex-col mt-6 gap-3 md:flex-row">
                 <a
-                  href="/resume.pdf"
+                  href="/Soumyabrata_Sarkar_Resume.pdf"
                   download
-                  className="button-style px-4 py-2 border rounded text-sm"
+                  className="button-style px-4 py-2 border rounded text-sm md:w-[170px]"
                 >
                   Download Resume
                 </a>
                 <Link
                   to="/contact"
-                  className="button-style px-4 py-2 bg-slate-800 text-white rounded text-sm"
+                  className="button-style px-4 py-2 bg-slate-800 text-white rounded text-sm md:w-[170px]"
                 >
                   Contact
                 </Link>
               </div>
 
               <h2 className="mt-8 text-2xl font-semibold ">Top Skills</h2>
-              <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm ">
+              <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm ">
                 {resume.skills.slice(0, 8).map((skill) => (
                   <SkillBox
                     data={{
@@ -108,7 +108,7 @@ const Home = () => {
 
           <section className="mt-12">
             <h2 className="text-2xl font-semibold ">Highlighted Projects</h2>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
               {resume.projects.map(
                 (p) =>
                   p.highlight && (

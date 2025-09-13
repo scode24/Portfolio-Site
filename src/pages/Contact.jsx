@@ -47,8 +47,8 @@ const Contact = () => {
               placeholder="Message"
               className="w-full border px-3 py-2 rounded h-32"
             />
-            <div className="flex gap-3">
-              <button className="button-style px-4 py-2 bg-slate-800 text-white rounded">
+            <div className="flex flex-col gap-3 md:flex-row">
+              <button className="button-style px-4 py-2 bg-slate-800 text-white rounded md:w-[170px]">
                 Send
               </button>
               <button
@@ -56,7 +56,7 @@ const Contact = () => {
                 onClick={() => {
                   setForm({ name: "", email: "", message: "" });
                 }}
-                className="button-style px-4 py-2 border rounded"
+                className="button-style px-4 py-2 border rounded md:w-[170px]"
               >
                 Reset
               </button>
