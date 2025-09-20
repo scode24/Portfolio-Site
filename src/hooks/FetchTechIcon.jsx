@@ -10,6 +10,7 @@ import {
   faReact,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import {
   faBars,
   faCloud,
@@ -49,6 +50,8 @@ const iconData = {
   x: <FontAwesomeIcon icon={faX} />,
   internet: <FontAwesomeIcon icon={faGlobe} />,
   youtube: <FontAwesomeIcon icon={faYoutube} />,
+  light: <FontAwesomeIcon icon={faSun} />,
+  dark: <FontAwesomeIcon icon={faMoon} />,
   //   kafka: <FontAwesomeIcon icon={fa} />,
 };
 

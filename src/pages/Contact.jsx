@@ -22,7 +22,10 @@ const Contact = () => {
           <p className="mt-2 ">
             Want to reach out? Send a message — it will open your mail client.
           </p>
-          <form onSubmit={submit} className="mt-6 space-y-4">
+          <form
+            onSubmit={submit}
+            className="mt-6 space-y-4 dark:text-slate-700"
+          >
             <input
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -45,8 +48,8 @@ const Contact = () => {
               placeholder="Message"
               className="w-full border px-3 py-2 rounded h-32"
             />
-            <div className="flex flex-col gap-3 md:flex-row">
-              <button className="button-style px-4 py-2 bg-slate-800 text-white rounded md:w-[170px]">
+            <div className="flex flex-col gap-3 md:flex-row dark:text-slate-50">
+              <button className="button-style px-4 py-2 bg-slate-800 text-white rounded md:w-[170px] dark:bg-zinc-950">
                 Send
               </button>
               <button
@@ -54,7 +57,7 @@ const Contact = () => {
                 onClick={() => {
                   setForm({ name: "", email: "", message: "" });
                 }}
-                className="button-style px-4 py-2 border rounded md:w-[170px]"
+                className="button-style px-4 py-2 border rounded md:w-[170px] dark:border-zinc-800"
               >
                 Reset
               </button>

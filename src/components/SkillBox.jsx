@@ -5,8 +5,8 @@ function SkillBox(props) {
   const { getIcon } = useFetchTechIcon();
 
   return (
-    <div className="flex flex-row border rounded text-sm ">
-      <div className="flex flex-col justify-center items-center p-3 bg-white border-r-[1px]">
+    <div className="flex flex-row border rounded text-sm dark:border-zinc-800">
+      <div className="flex flex-col justify-center items-center p-3 bg-white border-r-[1px] dark:bg-zinc-950 dark:border-zinc-800">
         {getIcon(skill)}
       </div>
       <div className="flex flex-col justify-center items-center ml-2">

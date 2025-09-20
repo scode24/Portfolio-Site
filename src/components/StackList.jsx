@@ -6,7 +6,10 @@ const StackList = ({ data }) => {
   return (
     <div className="flex flex-wrap gap-3">
       {stackList.map((stack, index) => (
-        <div key={index} className="px-2 py-1 bg-gray-200 rounded text-xs">
+        <div
+          key={index}
+          className="px-2 py-1 bg-gray-200 rounded text-xs dark:bg-zinc-800"
+        >
           {stack.trim()}
         </div>
       ))}

@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     resume && (
-      <footer className="border-t mt-12 py-8">
+      <footer className="border-t mt-12 py-8 dark:border-zinc-800">
         <div className="max-w-6xl mx-auto px-6 text-sm ">
           <div className="flex flex-col md:flex-row items-center justify-between gap-3">
             <div>

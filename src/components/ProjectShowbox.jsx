@@ -5,7 +5,7 @@ const CircularButton = (props) => {
   const { icon, label, link } = props.data;
   return (
     <div
-      className="flex flex-col justify-center items-center rounded-full border-[1px] bg-white p-3 shadow-sm w-15 h-15 cursor-pointer hover:border-[1px] hover:border-black"
+      className="flex flex-col justify-center items-center rounded-full border-[1px] bg-white p-3 shadow-sm w-15 h-15 cursor-pointer hover:border-[1px] hover:border-black dark:bg-zinc-950"
       onClick={() =>
         !link
           ? alert(
@@ -14,7 +14,7 @@ const CircularButton = (props) => {
           : window.open(link)
       }
     >
-      <div className="flex flex-col items-center text-xs">
+      <div className="flex flex-col items-center text-xs ">
         <div>{icon}</div>
         {label && <span>{label}</span>}
       </div>

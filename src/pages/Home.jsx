@@ -27,13 +27,13 @@ const Home = () => {
                 <a
                   href="/Soumyabrata_Sarkar_Resume.pdf"
                   download
-                  className="button-style px-4 py-2 border rounded text-sm md:w-[170px]"
+                  className="button-style px-4 py-2 border rounded text-sm md:w-[170px] dark:border-zinc-800"
                 >
                   Download Resume
                 </a>
                 <Link
                   to="/contact"
-                  className="button-style px-4 py-2 bg-slate-800 text-white rounded text-sm md:w-[170px]"
+                  className="button-style px-4 py-2 bg-slate-800 text-white rounded text-sm md:w-[170px] dark:bg-zinc-950"
                 >
                   Contact
                 </Link>
@@ -71,7 +71,7 @@ const Home = () => {
                 </div> */}
               </div>
               <div className="mt-4 flex gap-3">
-                <div className="flex flex-row text-sm px-3 py-1 border rounded">
+                <div className="flex flex-row text-sm px-3 py-1 border rounded dark:border-zinc-800">
                   <div className="flex flex-col justify-center items-center mr-2">
                     {getIcon("linkedin")}
                   </div>
@@ -87,7 +87,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-row text-sm px-3 py-1 border rounded">
+                <div className="flex flex-row text-sm px-3 py-1 border rounded dark:border-zinc-800">
                   <div className="flex flex-col justify-center items-center mr-2">
                     {getIcon("github")}
                   </div>
@@ -112,7 +112,7 @@ const Home = () => {
               {resume.projects.map(
                 (p) =>
                   p.highlight && (
-                    <div className="flex flex-col border rounded bg-white cursor-pointer">
+                    <div className="flex flex-col border rounded bg-white cursor-pointer dark:border-zinc-800">
                       <ProjectShowbox
                         data={{
                           imgsrc: p.imgSrc || "logo192.png",
@@ -123,7 +123,7 @@ const Home = () => {
                       />
                       <article
                         key={p.title}
-                        className="p-4"
+                        className="p-4 dark:bg-zinc-950 h-full"
                         onClick={() => navigator("projects")}
                       >
                         <h3 className="font-semibold ">{p.title}</h3>

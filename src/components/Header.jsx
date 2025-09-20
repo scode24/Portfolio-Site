@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import useFetchResumeInfo from "../hooks/FetchResumeInfo";
 import useFetchTechIcon from "../hooks/FetchTechIcon";
+import ThemeChanger from "./ThemeChanger";
 
 const MenuDropdown = (props) => {
   const { state } = props.data;
@@ -78,38 +79,39 @@ const Header = () => {
   const { getIcon } = useFetchTechIcon();
 
   return (
-    <header className="bg-white/60 backdrop-blur-sm sticky top-0 z-50 border-b">
+    <header className="bg-white/60 backdrop-blur-sm sticky top-0 z-50 border-b dark:bg-zinc-950/60 dark:border-zinc-800">
       {!loading && (
         <div className="max-w-6xl mx-auto px-6 py-[15px] flex items-center justify-between">
           <Link to="/" className="text-xl font-semibold ">
             {resume.name}
           </Link>
-          <nav className="space-x-4  hidden md:block">
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "hover:underline"
-              }
-              to="/"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "hover:underline"
-              }
-              to="/about"
-            >
-              About
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "hover:underline"
-              }
-              to="/skills"
-            >
-              Skills
-            </NavLink>
-            {/* <NavLink
+          <div className="flex flex-row">
+            <nav className="space-x-4 hidden md:block">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-semibold" : "hover:underline"
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-semibold" : "hover:underline"
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-semibold" : "hover:underline"
+                }
+                to="/skills"
+              >
+                Skills
+              </NavLink>
+              {/* <NavLink
               className={({ isActive }) =>
                 isActive ? "font-semibold" : "hover:underline"
               }
@@ -117,23 +119,25 @@ const Header = () => {
             >
               Experience
             </NavLink> */}
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "hover:underline"
-              }
-              to="/projects"
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "hover:underline"
-              }
-              to="/contact"
-            >
-              Contact
-            </NavLink>
-          </nav>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-semibold" : "hover:underline"
+                }
+                to="/projects"
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-semibold" : "hover:underline"
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
+            </nav>
+            <ThemeChanger />
+          </div>
           <div className="md:hidden">
             <div
               className="flex flex-col relative justify-center items-center cursor-pointer"

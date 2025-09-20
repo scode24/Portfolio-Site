@@ -12,7 +12,7 @@ const ActionButton = (props) => {
     isVisible && (
       <button
         // onClick={() => setActive(idx)}
-        className="flex flex-row text-sm px-3 py-1 border rounded w-full"
+        className="flex flex-row text-sm px-3 py-1 border rounded w-full dark:border-zinc-800"
         onClick={() => {
           !link
             ? alert(
@@ -46,9 +46,9 @@ const Projects = () => {
             {resume.projects.map((p, idx) => (
               <div
                 key={p.title}
-                className="flex flex-col border rounded bg-white"
+                className="flex flex-col border rounded bg-white dark:border-zinc-800"
               >
-                <div className="flex flex-row border-b">
+                <div className="flex flex-row border-b dark:bg-zinc-950">
                   <div className="flex flex-col justify-center items-center m-4">
                     {getIcon("project")}
                   </div>
@@ -65,7 +65,7 @@ const Projects = () => {
                     width: 200,
                   }}
                 />
-                <div className="flex flex-col p-3">
+                <div className="flex flex-col p-3 dark:bg-zinc-950 h-full">
                   <div className="flex flex-row justify-between items-start gap-3">
                     <ActionButton
                       data={{

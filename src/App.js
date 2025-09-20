@@ -11,7 +11,7 @@ import Skills from "./pages/Skills";
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-slate-50 text-slate-700">
+      <div className="min-h-screen bg-slate-50 text-slate-700 dark:bg-zinc-900 dark:text-slate-50">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
