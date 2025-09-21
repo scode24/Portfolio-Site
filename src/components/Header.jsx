@@ -12,13 +12,13 @@ const MenuDropdown = (props) => {
 
   return (
     state && (
-      <div className="flex flex-col absolute top-7 right-0 z-10 bg-slate-50 border w-[200px] shadow rounded">
+      <div className="flex flex-col absolute top-7 right-0 z-10 bg-slate-50 border w-[200px] shadow rounded dark:border-zinc-800 dark:bg-zinc-950">
         <div className="flex flex-col p-3">
           <div className="flex flex-col justify-center items-center">
             <img src="photo.jpg" className="rounded-full w-[100px] h-[100px]" />
           </div>
           <div className="flex flex-col mt-4 gap-2">
-            <div className="flex flex-row text-sm px-3 py-1 border rounded">
+            <div className="flex flex-row text-sm px-3 py-1 border rounded dark:border-zinc-800">
               <div className="flex flex-col justify-center items-center mr-2">
                 {getIcon("linkedin")}
               </div>
@@ -34,7 +34,7 @@ const MenuDropdown = (props) => {
               </div>
             </div>
 
-            <div className="flex flex-row text-sm px-3 py-1 border rounded">
+            <div className="flex flex-row text-sm px-3 py-1 border rounded dark:border-zinc-800">
               <div className="flex flex-col justify-center items-center mr-2">
                 {getIcon("github")}
               </div>
@@ -51,17 +51,29 @@ const MenuDropdown = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
-          <span className="p-3 border-b" onClick={() => navigator("/")}>
+        <div className="flex flex-col ">
+          <span
+            className="p-3 border-b dark:border-zinc-800"
+            onClick={() => navigator("/")}
+          >
             Home
           </span>
-          <span className="p-3 border-b" onClick={() => navigator("about")}>
+          <span
+            className="p-3 border-b dark:border-zinc-800"
+            onClick={() => navigator("about")}
+          >
             About
           </span>
-          <span className="p-3 border-b" onClick={() => navigator("skills")}>
+          <span
+            className="p-3 border-b dark:border-zinc-800"
+            onClick={() => navigator("skills")}
+          >
             Skills
           </span>
-          <span className="p-3 border-b" onClick={() => navigator("projects")}>
+          <span
+            className="p-3 border-b dark:border-zinc-800"
+            onClick={() => navigator("projects")}
+          >
             Projects
           </span>
           <span className="p-3" onClick={() => navigator("contact")}>
@@ -85,8 +97,8 @@ const Header = () => {
           <Link to="/" className="text-xl font-semibold ">
             {resume.name}
           </Link>
-          <div className="flex flex-row">
-            <nav className="space-x-4 hidden md:block">
+          <div className="hidden md:flex md:flex-row">
+            <nav className="space-x-4 ">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "font-semibold" : "hover:underline"
@@ -139,16 +151,19 @@ const Header = () => {
             <ThemeChanger />
           </div>
           <div className="md:hidden">
-            <div
-              className="flex flex-col relative justify-center items-center cursor-pointer"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? getIcon("x") : getIcon("menu")}
-              <MenuDropdown
-                data={{
-                  state: menuOpen,
-                }}
-              />
+            <div className="flex flex-row">
+              <ThemeChanger />
+              <div
+                className="flex flex-col relative justify-center items-center cursor-pointer"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                {menuOpen ? getIcon("x") : getIcon("menu")}
+                <MenuDropdown
+                  data={{
+                    state: menuOpen,
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
